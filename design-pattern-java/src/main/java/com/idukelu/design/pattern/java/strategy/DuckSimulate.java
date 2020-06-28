@@ -4,7 +4,7 @@ import com.idukelu.design.pattern.java.strategy.behavior.Squeak;
 import com.idukelu.design.pattern.java.strategy.duck.MallardDuck;
 
 /**
- * TODO: 编辑说明信息
+ * 鸭子样例测试
  *
  * @author duke
  * @date 2020.06.26
