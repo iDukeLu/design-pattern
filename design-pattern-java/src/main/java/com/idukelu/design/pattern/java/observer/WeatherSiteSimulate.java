@@ -1,5 +1,8 @@
 package com.idukelu.design.pattern.java.observer;
 
+import com.idukelu.design.pattern.java.observer.improve.CurrentConditionsDisplayObserver;
+import com.idukelu.design.pattern.java.observer.improve.WeatherDataSubject;
+
 /**
  * 气象站样例测试
  *
@@ -8,7 +11,11 @@ package com.idukelu.design.pattern.java.observer;
  */
 public class WeatherSiteSimulate {
     public static void main(String[] args) {
-        javaWeatherSiteSimulate();
+        WeatherDataSubject weatherDataSubject = new WeatherDataSubject();
+        new CurrentConditionsDisplayObserver(weatherDataSubject);
+        weatherDataSubject.setMeasurements(27D, 28D, 29D);
+        weatherDataSubject.setMeasurements(28D, 29D, 30D);
+        weatherDataSubject.setMeasurements(29D, 30D, 31D);
     }
 
     public static void custWeatherSiteSimulate() {
